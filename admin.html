@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="imagens/logoF.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin — Flavio Models</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Saltar para o conteúdo</a>
+
+  <header class="navbar">
+    <a href="index.html" class="navbar__logo">Flavio models</a>
+
+    <nav class="navbar__links" aria-label="Navegação principal">
+      <a href="modelos.html">Modelos</a>
+      <a href="quero-ser-modelo.html">Quero ser Modelo</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+
+    <button class="navbar__toggle" data-nav-toggle aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <nav class="navbar__mobile-panel" data-nav-panel aria-label="Navegação mobile">
+    <a href="modelos.html">Modelos</a>
+    <a href="quero-ser-modelo.html">Quero ser Modelo</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="contato.html">Contato</a>
+  </nav>
+
+  <main id="conteudo">
+
+    <!-- LOGIN (senha fixa, só para fins didáticos) -->
+    <section class="section container admin-login" data-admin-login>
+      <span class="eyebrow">Painel administrativo</span>
+      <h1>Acesso restrito</h1>
+      <p>Esta área é só para a equipe da Flavio Models avaliar os cadastros recebidos.</p>
+
+      <form data-admin-login-form novalidate>
+        <div class="form-field" style="text-align:left;">
+          <label for="admin-password">Senha</label>
+          <input type="password" id="admin-password" name="senha" data-admin-password required>
+          <span class="admin-login__error" data-admin-login-error>Senha incorreta. Tente novamente.</span>
+        </div>
+        <button type="submit" class="btn btn--primary btn--block">Entrar</button>
+      </form>
+    </section>
+
+    <!-- DASHBOARD (escondido até o login) -->
+    <section class="section container" data-admin-dashboard style="display:none;">
+
+      <div class="admin-bar">
+        <h1 style="font-style:italic; margin:0;">Painel Admin</h1>
+        <button type="button" class="btn btn--outline" data-admin-logout>Sair</button>
+      </div>
+
+      <!-- CADASTROS PARA AVALIAR -->
+      <h2 style="font-style:italic; margin-bottom: var(--space-md);">Cadastros pendentes</h2>
+
+      <div class="submissions-grid" data-pending-grid></div>
+      <p class="submissions-empty" data-pending-empty>Nenhum cadastro pendente no momento.</p>
+
+      <!-- MODELOS DA AGÊNCIA (mesma grid/busca/filtro de modelos.html) -->
+      <h2 style="font-style:italic; margin: var(--space-2xl) 0 var(--space-md);">Modelos da agência</h2>
+
+      <div class="models-search">
+        <input type="search" placeholder="Procurar" data-models-search aria-label="Procurar modelo pelo nome">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <circle cx="11" cy="11" r="7"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+      </div>
+
+      <nav class="tabs" aria-label="Filtrar modelos por categoria">
+        <button type="button" class="is-active" data-models-tab="Todos">Todos os Modelos</button>
+        <button type="button" data-models-tab="Mulheres">Mulheres</button>
+        <button type="button" data-models-tab="Homens">Homens</button>
+        <button type="button" data-models-tab="Teen">Teen</button>
+      </nav>
+
+      <div class="grid" data-models-page-grid data-category="Todos">
+        <!-- renderizado via js/main.js -->
+      </div>
+
+      <p class="models-empty" data-models-empty>Nenhum modelo encontrado para essa busca.</p>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__social">
+      <a href="#" target="_blank" rel="noopener">Instagram</a>
+      <a href="#" target="_blank" rel="noopener">TikTok</a>
+    </div>
+    <p class="footer__copy">&copy; 2026 Flavio Models. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- MODAL — FICHA DO MODELO -->
+  <div class="model-modal" data-model-modal role="dialog" aria-modal="true" aria-labelledby="model-modal-title">
+    <div class="model-modal__box" data-modal-box>
+      <button class="model-modal__close" data-modal-close aria-label="Fechar ficha do modelo">&times;</button>
+    </div>
+  </div>
+
+  <!-- LIGHTBOX — foto ampliada (avaliação no admin) -->
+  <div class="photo-lightbox" data-photo-lightbox>
+    <button class="photo-lightbox__close" data-photo-lightbox-close aria-label="Fechar foto ampliada">&times;</button>
+    <img data-photo-lightbox-img alt="Foto ampliada do cadastro">
+  </div>
+
+  <script src="js/models.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

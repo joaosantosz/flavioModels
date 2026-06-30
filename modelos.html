@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="imagens/logoF.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modelos — Flavio Models</title>
+  <meta name="description" content="Conheça os modelos da Flavio Models: mulheres, homens e teen.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Saltar para o conteúdo</a>
+
+  <header class="navbar">
+    <a href="index.html" class="navbar__logo">Flavio models</a>
+
+    <nav class="navbar__links" aria-label="Navegação principal">
+      <a href="modelos.html">Modelos</a>
+      <a href="cadastro.html">Quero ser Modelo</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+
+    <button class="navbar__toggle" data-nav-toggle aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <nav class="navbar__mobile-panel" data-nav-panel aria-label="Navegação mobile">
+    <a href="modelos.html">Modelos</a>
+    <a href="cadastro.html">Quero ser Modelo</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="contato.html">Contato</a>
+  </nav>
+
+  <main id="conteudo">
+    <section class="section container">
+      <h1 style="font-style:italic; margin-bottom:var(--space-md);">Modelos</h1>
+
+      <div class="models-search">
+        <input type="search" placeholder="Procurar" data-models-search aria-label="Procurar modelo pelo nome">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <circle cx="11" cy="11" r="7"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+      </div>
+
+      <nav class="tabs" aria-label="Filtrar modelos por categoria">
+        <button type="button" class="is-active" data-models-tab="Todos">Todos os Modelos</button>
+        <button type="button" data-models-tab="Mulheres">Mulheres</button>
+        <button type="button" data-models-tab="Homens">Homens</button>
+        <button type="button" data-models-tab="Teen">Teen</button>
+      </nav>
+
+      <div class="grid" data-models-page-grid data-category="Todos">
+        <!-- renderizado via js/main.js -->
+      </div>
+
+      <p class="models-empty" data-models-empty>Nenhum modelo encontrado para essa busca.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__social">
+      <a href="#" target="_blank" rel="noopener">Instagram</a>
+      <a href="#" target="_blank" rel="noopener">TikTok</a>
+    </div>
+    <p class="footer__copy">© 2026 Flavio Models. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- MODAL — FICHA DO MODELO -->
+  <div class="model-modal" data-model-modal role="dialog" aria-modal="true" aria-labelledby="model-modal-title">
+    <div class="model-modal__box" data-modal-box>
+      <button class="model-modal__close" data-modal-close aria-label="Fechar ficha do modelo">&times;</button>
+    </div>
+  </div>
+
+  <script src="js/models.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="imagens/logoF.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quero ser Modelo — Flavio Models</title>
+  <meta name="description" content="Faça parte do casting da Flavio Models. Preencha o formulário e envie suas fotos para avaliação.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Saltar para o conteúdo</a>
+
+  <header class="navbar">
+    <a href="index.html" class="navbar__logo">Flavio models</a>
+    <nav class="navbar__links" aria-label="Navegação principal">
+      <a href="modelos.html">Modelos</a>
+      <a href="quero-ser-modelo.html">Quero ser Modelo</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+    <button class="navbar__toggle" data-nav-toggle aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <nav class="navbar__mobile-panel" data-nav-panel aria-label="Navegação mobile">
+    <a href="modelos.html">Modelos</a>
+    <a href="quero-ser-modelo.html">Quero ser Modelo</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="contato.html">Contato</a>
+  </nav>
+
+  <main id="conteudo">
+    <section class="section container">
+
+      <div class="signup-intro">
+        <span class="eyebrow">Cadastro</span>
+        <h1>Quero ser Modelo</h1>
+        <p>Se você deseja fazer parte do casting da Flavio Models, atenção para as informações abaixo, preencha o formulário e envie suas fotos para realizarmos a avaliação digital.</p>
+
+        <h3>Quais são as medidas ideais para o mercado da moda e publicidade?</h3>
+        <p>Não existem medidas certas ou específicas, é importante ter personalidade marcante, atitude e querer muito ser modelo.</p>
+
+        <h3>É exigida altura mínima?</h3>
+        <p>Dentro do mercado de moda e publicidade isso varia muito, nós analisamos todos os perfis independente da altura.</p>
+
+        <h3>Quero ser modelo! Como faço para realizar uma avaliação digital? Quais devem ser meus primeiros passos?</h3>
+        <p>Primeiramente, preencha corretamente nossos dados e a ficha abaixo, deixar o Instagram e TikTok aberto para visualização de fotos, independente da resposta, todos recebem um e-mail devolutivo, seja o feedback positivo, ou negativo, com nossos próximos passos.</p>
+
+        <h3>Como devem ser essas fotos? Preciso ter book profissional?</h3>
+        <p>Não é necessário pagar por um book profissional, nas análises de preferência fotos caseiras feitas em celular. Evitar: selfies, fotos com óculos de sol, ou outros acessórios.</p>
+        <p>Certifique-se de fazer fotos:</p>
+        <ul>
+          <li>Do corpo inteiro e meio corpo;</li>
+          <li>De perfil;</li>
+          <li>E close do rosto — sorrindo e sem sorrir.</li>
+        </ul>
+
+        <h3>A partir de qual idade posso trabalhar na profissão modelo?</h3>
+        <p>O mercado de moda nacional, flexível e globalizado, ignora as restrições de idade em busca de novos talentos. Não há uma exigência rígida na legislação trabalhista, e os modelos profissionais podem trabalhar a partir dos 8 anos em qualquer tipo de campanha publicitária, fotos, filmes, desfiles, desde que haja autorização dos responsáveis.</p>
+        <p>No Brasil, nós facilitamos a contratação de quem tem entre 8 a 15 anos, exigindo emancipação ou documentação complexa da Justiça do Trabalho, agilizando assim a participação em grandes projetos.</p>
+      </div>
+
+      <form data-signup-form novalidate>
+
+        <p class="form-alert" data-form-alert role="alert">
+          Preencha os campos obrigatórios destacados em vermelho antes de enviar.
+        </p>
+
+        <p class="form-section-title">Dados pessoais</p>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required>
+            <span class="form-field__error">Informe o nome completo.</span>
+          </div>
+          <div class="form-field">
+            <label for="responsavel">Nome do Responsável <span style="text-transform:none;">(se menor de idade)</span></label>
+            <input type="text" id="responsavel" name="responsavel">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+            <span class="form-field__error">Informe um e-mail válido.</span>
+          </div>
+          <div class="form-field">
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(99) 99999-9999" required>
+            <span class="form-field__error">Informe um telefone para contato.</span>
+          </div>
+        </div>
+
+        <p class="form-section-title">Medidas</p>
+        <div class="form-row form-row--three">
+          <div class="form-field">
+            <label for="idade">Idade</label>
+            <input type="number" id="idade" name="idade" min="8" max="99" required>
+            <span class="form-field__error">Informe a idade.</span>
+          </div>
+          <div class="form-field">
+            <label for="altura">Altura (cm)</label>
+            <input type="number" id="altura" name="altura" min="100" max="220">
+          </div>
+          <div class="form-field">
+            <label for="peso">Peso (kg)</label>
+            <input type="number" id="peso" name="peso" min="20" max="200">
+          </div>
+        </div>
+        <div class="form-row form-row--three">
+          <div class="form-field">
+            <label for="torax">Tórax (cm)</label>
+            <input type="number" id="torax" name="torax">
+          </div>
+          <div class="form-field">
+            <label for="cintura">Cintura (cm)</label>
+            <input type="number" id="cintura" name="cintura">
+          </div>
+          <div class="form-field">
+            <label for="quadril">Quadril (cm)</label>
+            <input type="number" id="quadril" name="quadril">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="genero">Gênero</label>
+            <select id="genero" name="genero" required>
+              <option value="">Selecione</option>
+              <option value="Feminino">Feminino</option>
+              <option value="Masculino">Masculino</option>
+              <option value="Teen">Teen</option>
+            </select>
+            <span class="form-field__error">Selecione uma opção.</span>
+          </div>
+          <div class="form-field"></div>
+        </div>
+
+        <p class="form-section-title">Redes sociais</p>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="instagram">Instagram</label>
+            <input type="text" id="instagram" name="instagram" placeholder="@seuusuario">
+          </div>
+          <div class="form-field">
+            <label for="tiktok">TikTok</label>
+            <input type="text" id="tiktok" name="tiktok" placeholder="@seuusuario">
+          </div>
+        </div>
+
+        <p class="form-section-title">Fotos</p>
+        <label class="upload-field" for="fotos" data-upload-field>
+          <svg class="upload-field__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+            <path d="M12 16V4M12 4l-4 4M12 4l4 4"></path>
+            <path d="M4 16v3a2 2 0 002 2h12a2 2 0 002-2v-3"></path>
+          </svg>
+          <span class="upload-field__label">Toque para enviar suas fotos — mínimo 3, máximo 8 (corpo inteiro, perfil, rosto)</span>
+          <input type="file" id="fotos" name="fotos" accept="image/*" multiple data-upload-input>
+        </label>
+        <p class="upload-field__hint" data-upload-count>0 foto(s) selecionada(s) — mínimo 3, máximo 8.</p>
+        <span class="form-field__error" data-upload-error>Envie no mínimo 3 e no máximo 8 fotos.</span>
+        <div class="upload-preview" data-upload-preview></div>
+
+        <p class="form-submit-note">Após o envio, você receberá um e-mail de retorno com a avaliação, seja ela positiva ou negativa.</p>
+
+        <div style="margin-top: var(--space-lg);">
+          <button type="submit" class="btn btn--primary btn--block">Enviar Cadastro</button>
+        </div>
+      </form>
+
+      <div class="form-success" data-form-success>
+        <svg class="form-success__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <circle cx="12" cy="12" r="11" fill="#2E7D32"></circle>
+          <path d="M7.5 12.5l3 3 6-6.5" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+        <h2>Cadastro enviado</h2>
+        <p>Você vai receber um retorno por e-mail em breve.</p>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__social">
+      <a href="#" target="_blank" rel="noopener">Instagram</a>
+      <a href="#" target="_blank" rel="noopener">TikTok</a>
+    </div>
+    <p class="footer__copy">© 2026 Flavio Models. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="js/models.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
